@@ -1,0 +1,121 @@
+﻿@using ShopDesk.UI.Helpers
+@model ShopDesk.UI.Models.SidebarViewModel
+
+<nav>
+    <div class="app-logo">
+        <a class="logo d-flex" href="@Url.Action("Index", "Home")">
+            <img alt="#" src="~/images/logo.png">
+        </a>
+        <span class="bg-light-primary toggle-semi-nav d-flex-center">
+            <i class="ti ti-chevron-right"></i>
+        </span>
+
+        <div class="d-flex align-items-center nav-profile p-3">
+            <span class="h-45 w-45 d-flex-center b-r-10 position-relative bg-transparent m-auto">
+                <img alt="avatar" class="img-fluid b-r-10"
+                     src="~/assets/images/avatar/account-avatar-profile-user.svg">
+                <span class="position-absolute top-0 end-0 p-1 bg-success border border-light rounded-circle"></span>
+            </span>
+            <div class="flex-grow-1 ps-2">
+                <h6 class="text-primary mb-0">@Model.CurrentUser.Name</h6>
+                <p class="text-muted f-s-12 mb-0">@Model.CurrentUser.Email</p>
+            </div>
+
+            <div class="dropdown profile-menu-dropdown position-relative">
+                <a aria-expanded="false" data-bs-auto-close="true" data-bs-placement="top" data-bs-toggle="dropdown" role="button">
+                    <i class="ph ph-light ph-user-circle-gear fs-5"></i>
+                </a>
+                <ul class="dropdown-menu">
+                    <li class="dropdown-item">
+                        <a href="#">
+                            <i class="ph-light  ph-user pe-1 f-s-20"></i> Profile Details
+                        </a>
+                    </li>
+                    <li class="dropdown-item">
+                        <a href="#">
+                            @* Link to Password Change Page *@
+                            <i class="ph-light ph-key pe-1 f-s-20"></i>Change Password
+                        </a>
+                    </li>
+                    <li class="app-divider-v dotted py-1"></li>
+                    <li class="dropdown-item">
+                        <a class="mb-0" href="#">
+                            @* Link to Settings Page *@
+                            <i class="ph-light ph-gear pe-1 f-s-20"></i> Settings
+                        </a>
+                    </li>
+                    <li class="app-divider-v dotted py-1"></li>
+                    <li class="dropdown-item">
+                        <form id="logout-form" asp-controller="Account" asp-action="Logout" method="post">
+                            <a class="mb-0 text-danger" href="#" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                                <i class="ph-light ph-sign-out pe-1 f-s-20"></i> Log Out
+                            </a>
+                        </form>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="app-nav" id="app-simple-bar">
+        <ul class="main-nav p-0 mt-2 mb-5">
+            @if (Model.MenuItems.Any())
+            {
+                @foreach (var menuItem in Model.MenuItems)
+                {
+                    <li class="@(menuItem.HasSubItems ? "" : "no-sub")">
+                        @{
+                            var menuId = $"{menuItem.Title.GenerateSlug()}-menu";
+                        }
+                        <a @if (menuItem.HasSubItems) {
+                        <text> aria-expanded="false" data-bs-toggle="collapse" href="#@menuId" </text>
+                    } else
+                    {
+
+                        <text> href="@(!string.IsNullOrEmpty(menuItem.RouteName) ? Url.RouteUrl(menuItem.RouteName) : "javascript:void(0)")" </text>
+                    }
+    >
+                                @if (!string.IsNullOrEmpty(menuItem.Svg))
+                                {
+                                        <img src="@Url.Content(menuItem.Svg)" alt="@menuItem.Title Icon" class="me-2">
+                                }
+                                @if (!string.IsNullOrEmpty(menuItem.Icon))
+                                {
+                                        <i class="@menuItem.Icon"></i>
+                                }
+                                @menuItem.Title
+                            </a>
+
+                    @if (menuItem.HasSubItems)
+                    {
+                        <ul class="collapse" id="@menuId">
+                            @foreach (var subItem in menuItem.SubItems)
+                            {
+                                <li>
+                                    <a href="@(!string.IsNullOrEmpty(subItem.RouteName) ? Url.RouteUrl(subItem.RouteName) : "javascript:void(0)")">
+                                        @if (!string.IsNullOrEmpty(subItem.Icon))
+                                        {
+                                            <i class="@subItem.Icon"></i>
+                                        }
+                                        @subItem.Title
+                                    </a>
+                                </li>
+                            }
+                        </ul>
+                    }
+                </li>
+            }
+                        }
+                        else
+            {
+                <li>No menu items available.</li>
+            }
+        </ul>
+    </div>
+
+    <div class="app-logo bottom"></div>
+    <div class="menu-navs">
+        <span class="menu-previous"><i class="ti ti-chevron-left"></i></span>
+        <span class="menu-next"><i class="ti ti-chevron-right"></i></span>
+    </div>
+</nav>

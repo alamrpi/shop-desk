@@ -1,50 +1,121 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - ShopDesk.UI</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/ShopDesk.UI.styles.css" asp-append-version="true" />
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Multipurpose, super flexible, powerful, clean modern responsive bootstrap 5 admin template"
+          name="description">
+    <meta content="admin template, ki-admin admin template, dashboard template, flat admin template, responsive admin template, web app"
+          name="keywords">
+    <meta content="la-themes" name="author">
+    <title>Krishi Eye | @ViewData["Title"]</title>
+
+    <link href="~/images/logo-icon.png" rel="icon" type="image/x-icon">
+    <link href="~/images/logo-icon.png" rel="shortcut icon" type="image/x-icon">
+
+    <link href="~/assets/vendor/fontawesome/css/all.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com/" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@@tabler/icons-webfont@latest/tabler-icons.min.css">
+    <link href="~/assets/vendor/animation/animate.min.css" rel="stylesheet">
+    <link href="~/assets/vendor/flag-icons-master/flag-icon.css" rel="stylesheet" type="text/css">
+    <link href="~/assets/vendor/bootstrap/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="~/assets/vendor/simplebar/simplebar.css" rel="stylesheet" type="text/css">
+    <link href="~/assets/css/tags-input.css" rel="stylesheet" type="text/css">
+    <link href="~/assets/css/custom.css" rel="stylesheet" type="text/css">
+
+    @await RenderSectionAsync("Styles", required: false)
+
+    <link href="~/assets/css/style.css" rel="stylesheet" type="text/css">
+    <link href="~/assets/css/responsive.css" rel="stylesheet" type="text/css">
 </head>
+
 <body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">ShopDesk.UI</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
-                    </ul>
-                    <partial name="_LoginPartial" />
+    <div class="app-wrapper">
+        <div class="loader-wrapper">
+            <div class="loader_24"></div>
+        </div>
+        <div id="loader-spinner" style="display: none;">
+            <div class="loader-overlay"></div>
+            <div class="loader-content">
+                <div class="spinner-border text-primary" role="status">
+                    <span class="visually-hidden">Loading...</span>
                 </div>
             </div>
-        </nav>
-    </header>
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
+        </div>
+
+        @await Component.InvokeAsync("Sidebar")
+        <div class="app-content">
+            <div style="min-height: 85vh">
+                <partial name="_Header" />
+                <main>
+                    <div class="w-100">
+                        @RenderBody()
+                    </div>
+                </main>
+            </div>
+        </div>
+        <footer>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-9 col-12">
+                        <p class="footer-text f-w-600 mb-0">Footer Text</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        @if (TempData["Error"] != null)
+        {
+            <div class="alert alert-danger alert-dismissible cookies-alert toast-alert" role="alert" id="alert">
+                <div class="d-flex justify-content-between">
+                    <p class="mb-0">@TempData["Error"]</p>
+                    <button aria-label="Close" class="btn-close" data-bs-dismiss="alert" type="button"></button>
+                </div>
+            </div>
+        }
+        @if (TempData["Success"] != null)
+        {
+            <div class="alert alert-success alert-dismissible cookies-alert toast-alert" role="alert" id="alert">
+                <div class="d-flex justify-content-between">
+                    <p class="mb-0">@TempData["Success"]</p>
+                    <button aria-label="Close" class="btn-close" data-bs-dismiss="alert" type="button"></button>
+                </div>
+            </div>
+        }
     </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2025 - ShopDesk.UI - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-        </div>
-    </footer>
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/assets/js/jquery-3.6.3.min.js"></script>
+    <script src="~/assets/vendor/simplebar/simplebar.js"></script>
+    <script src="~/assets/vendor/phosphor/phosphor.js"></script>
+    <script src="~/assets/vendor/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="~/assets/js/script.js"></script>
+
+    <script src="~/assets/vendor/ckeditor/ckeditor.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-tagsinput/0.8.0/bootstrap-tagsinput.min.js"></script>
+
+    <script>
+        $(function () {
+            $('.ckEditor').each(function (e) {
+                CKEDITOR.replace(this.id, { /* customConfig if needed */ });
+            });
+
+            $('.tags').tagsinput({
+                tagClass: 'badge-info'
+            });
+        });
+
+        // Auto-close alert messages
+        setTimeout(function () {
+            const alert = document.getElementById('alert');
+            if (alert) {
+                const bsAlert = bootstrap.Alert.getOrCreateInstance(alert);
+                if(bsAlert) bsAlert.close();
+            }
+        }, 3000);
+    </script>
+
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

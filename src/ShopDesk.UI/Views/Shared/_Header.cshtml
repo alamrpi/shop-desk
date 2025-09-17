@@ -1,0 +1,42 @@
+﻿<header class="header-main">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-8 col-sm-6 d-flex align-items-center header-left p-0">
+                <span class="header-toggle ">
+                    <i class="ph ph-squares-four"></i>
+                </span>
+                <div class="header-searchbar w-100">
+                    @* Something goes here *@
+                </div>
+            </div>
+
+            <div class="col-4 col-sm-6 d-flex align-items-center justify-content-end header-right p-0">
+                <ul class="d-flex align-items-center">
+                    <li>
+                        <div class="btn-group">
+                           @*  @{
+                                // In a real app, get this from the current culture.
+                                var currentLang = System.Globalization.CultureInfo.CurrentUICulture.TwoLetterISOLanguageName.ToUpper();
+                            }
+                            <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                @currentLang
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item @(currentLang == "EN" ? "active disabled" : "")" href="@Url.Action("SetLanguage", "Home", new { lang = "en" })">EN</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item @(currentLang == "BN" ? "active disabled" : "")" href="@Url.Action("SetLanguage", "Home", new { lang = "bn" })">BN</a>
+                                </li>
+                            </ul> *@
+                        </div>
+                    </li>
+
+                    @* The rest of the header content (apps, cart, notifications) goes here. *@
+                    @* Make sure to update image paths like src="../assets/images/..." to src="~/assets/images/..." *@
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
