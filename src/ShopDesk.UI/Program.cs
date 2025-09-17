@@ -1,5 +1,7 @@
+using Microsoft.AspNetCore.Identity;
 using Serilog;
 using ShopDesk.Application;
+using ShopDesk.Domain.Entities;
 using ShopDesk.Persistance;
 
 namespace ShopDesk.UI
@@ -22,9 +24,12 @@ namespace ShopDesk.UI
             // 2. Register services from the Persistence (Infrastructure) layer
             builder.Services.AddPersistenceServices(builder.Configuration);
 
- 
             builder.Services.AddControllersWithViews();
             builder.Services.AddRazorPages();
+
+            builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
+                            .AddEntityFrameworkStores<ApplicationDbContext>()
+                            .AddDefaultTokenProviders();
 
             var app = builder.Build();
 
@@ -45,6 +50,7 @@ namespace ShopDesk.UI
 
             app.UseRouting();
 
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.MapControllerRoute(

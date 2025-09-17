@@ -1,8 +1,6 @@
-﻿// File: ShopDesk.Persistance/DependencyInjection.cs
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using ShopDesk.Persistance.Data;
 
 namespace ShopDesk.Persistance;
 
@@ -13,6 +11,7 @@ public static class DependencyInjection
         services.AddDbContext<ApplicationDbContext>(options =>
             options.UseSqlServer(configuration.GetConnectionString("DefaultConnection"),
                 b => b.MigrationsAssembly(typeof(ApplicationDbContext).Assembly.FullName)));
+
 
         // Register repositories with their interfaces
         // Using Scoped lifetime, as it's the standard for DbContext-related services

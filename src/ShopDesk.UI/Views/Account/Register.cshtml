@@ -1,0 +1,74 @@
+﻿@model ShopDesk.UI.Models.RegisterViewModel
+
+@{
+    Layout = "_AuthLayout";
+    ViewData["Title"] = "Register";
+}
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header">@ViewData["Title"]</div>
+
+                <div class="card-body">
+                    <form asp-action="Register" method="post">
+                        <div asp-validation-summary="ModelOnly" class="text-danger" role="alert"></div>
+
+                        <div class="row mb-3">
+                            <label asp-for="Name" class="col-md-4 col-form-label text-md-end"></label>
+                            <div class="col-md-6">
+                                <input asp-for="Name" class="form-control" autocomplete="name" autofocus>
+                                <span asp-validation-for="Name" class="invalid-feedback"></span>
+                            </div>
+                        </div>
+
+                        <div class="row mb-3">
+                            <label asp-for="Mobile" class="col-md-4 col-form-label text-md-end"></label>
+                            <div class="col-md-6">
+                                <input asp-for="Mobile" class="form-control" autocomplete="tel">
+                                <span asp-validation-for="Mobile" class="invalid-feedback"></span>
+                            </div>
+                        </div>
+
+                        <div class="row mb-3">
+                            <label asp-for="Email" class="col-md-4 col-form-label text-md-end"></label>
+                            <div class="col-md-6">
+                                <input asp-for="Email" class="form-control" autocomplete="email">
+                                <span asp-validation-for="Email" class="invalid-feedback"></span>
+                            </div>
+                        </div>
+
+                        <div class="row mb-3">
+                            <label asp-for="Password" class="col-md-4 col-form-label text-md-end"></label>
+                            <div class="col-md-6">
+                                <input asp-for="Password" class="form-control" autocomplete="new-password">
+                                <span asp-validation-for="Password" class="invalid-feedback"></span>
+                            </div>
+                        </div>
+
+                        <div class="row mb-3">
+                            <label asp-for="ConfirmPassword" class="col-md-4 col-form-label text-md-end"></label>
+                            <div class="col-md-6">
+                                <input asp-for="ConfirmPassword" class="form-control" autocomplete="new-password">
+                                <span asp-validation-for="ConfirmPassword" class="invalid-feedback"></span>
+                            </div>
+                        </div>
+
+                        <div class="row mb-0">
+                            <div class="col-md-6 offset-md-4">
+                                <button type="submit" class="btn btn-primary">
+                                    Register
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

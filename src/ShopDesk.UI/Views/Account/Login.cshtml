@@ -1,0 +1,58 @@
+﻿@model ShopDesk.UI.Models.LoginViewModel
+
+@{
+    Layout = "_AuthLayout";
+    ViewData["Title"] = "Login";
+}
+
+<div class="row justify-content-center">
+    <div class="col-lg-5">
+        <div class="form-container p-5 bg-white rounded">
+            <form class="app-form" asp-controller="Account" asp-action="Login" method="post">
+                <div asp-validation-summary="ModelOnly" class="text-danger" role="alert"></div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="mb-5 text-center text-lg-start">
+                            <p class="f-s-16 mt-2">
+                                <img alt="Krishi Eye Logo" class="img-fluid" src="~/images/logo.png">
+                                <br>
+                                <span class="text-muted d-block text-center">Buy, Sell & Grow with Krishi Eye</span>
+                            </p>
+                            <h2 class="f-w-600 text-center mt-5">Login</h2>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="form-floating mb-3">
+                            <input asp-for="Email" class="form-control" placeholder="Email" />
+                            <label asp-for="Email"></label>
+                            <span asp-validation-for="Email" class="invalid-feedback d-block"></span>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="form-floating mb-3">
+                            <input asp-for="Password" class="form-control" placeholder="Password" />
+                            <label asp-for="Password"></label>
+                            <span asp-validation-for="Password" class="invalid-feedback d-block"></span>
+                        </div>
+                        <div class="text-end ">
+                            <a class="text-dark f-w-500 text-decoration-underline" href="#">Forgot password</a>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="form-check d-flex align-items-center gap-2 mb-3">
+                            <input asp-for="RememberMe" class="form-check-input w-25 h-25" />
+                            <label asp-for="RememberMe" class="form-check-label mt-2 f-s-16 text-dark"></label>
+                        </div>
+                    </div>
+                    <div class="col-12 mt-3">
+                        <button class="btn btn-primary btn-lg w-100" type="submit" role="button" style="height: 60px;">Login</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] | Krishi Eye</title>
+
+    <link href="~/images/logo-icon.png" rel="icon" type="image/x-icon">
+    <link href="~/images/logo-icon.png" rel="shortcut icon" type="image/x-icon">
+
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@@phosphor-icons/web@2.1.1/src/regular/style.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@@phosphor-icons/web@2.1.1/src/fill/style.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@@phosphor-icons/web@2.1.2/src/bold/style.css" />
+
+    <link href="~/assets/vendor/bootstrap/bootstrap.min.css" rel="stylesheet" type="text/css">
+
+    <link href="~/assets/css/style.css" rel="stylesheet" type="text/css">
+
+    <link href="~/assets/css/responsive.css" rel="stylesheet" type="text/css">
+</head>
+<body class="sign-in-bg" style="background: #CAE7EB;">
+    <div class="app-wrapper d-block">
+        <div class="container main-container">
+            @RenderBody()
+        </div>
+    </div>
+
+    <script src="~/assets/js/jquery-3.6.3.min.js"></script>
+    <script src="~/assets/vendor/bootstrap/bootstrap.bundle.min.js"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
