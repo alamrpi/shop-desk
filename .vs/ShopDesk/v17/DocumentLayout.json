@@ -3,8 +3,44 @@
   "WorkspaceRootPath": "D:\\Projects\\Self\\shop-desk\\ShopDesk\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A962AF4F-1AE3-48DB-A5AF-C30E5080C27D}|ShopDesk.Application\\ShopDesk.Application.csproj|d:\\projects\\self\\shop-desk\\shopdesk\\shopdesk.application\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A962AF4F-1AE3-48DB-A5AF-C30E5080C27D}|ShopDesk.Application\\ShopDesk.Application.csproj|solutionrelative:shopdesk.application\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4905C0D5-AD30-4141-83AA-37E2534C2FD0}|src\\ShopDesk.UI\\ShopDesk.UI.csproj|d:\\projects\\self\\shop-desk\\shopdesk\\src\\shopdesk.ui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4905C0D5-AD30-4141-83AA-37E2534C2FD0}|src\\ShopDesk.UI\\ShopDesk.UI.csproj|solutionrelative:src\\shopdesk.ui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4905C0D5-AD30-4141-83AA-37E2534C2FD0}|src\\ShopDesk.UI\\ShopDesk.UI.csproj|d:\\projects\\self\\shop-desk\\shopdesk\\src\\shopdesk.ui\\shopdesk.ui.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{4905C0D5-AD30-4141-83AA-37E2534C2FD0}|src\\ShopDesk.UI\\ShopDesk.UI.csproj|solutionrelative:src\\shopdesk.ui\\shopdesk.ui.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ADC6BCCE-E7C8-48BD-9516-7EC4633FDF20}|src\\ShopDesk.Persistence\\ShopDesk.Domain.csproj|d:\\projects\\self\\shop-desk\\shopdesk\\src\\shopdesk.persistence\\shopdesk.domain.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{ADC6BCCE-E7C8-48BD-9516-7EC4633FDF20}|src\\ShopDesk.Persistence\\ShopDesk.Domain.csproj|solutionrelative:src\\shopdesk.persistence\\shopdesk.domain.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A962AF4F-1AE3-48DB-A5AF-C30E5080C27D}|ShopDesk.Application\\ShopDesk.Application.csproj|d:\\projects\\self\\shop-desk\\shopdesk\\shopdesk.application\\shopdesk.application.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{A962AF4F-1AE3-48DB-A5AF-C30E5080C27D}|ShopDesk.Application\\ShopDesk.Application.csproj|solutionrelative:shopdesk.application\\shopdesk.application.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD82DDEB-3E61-461F-8F91-69F3F77E2A3D}|Infrastructure\\ShopDesk.Sql\\ShopDesk.Persistance.csproj|d:\\projects\\self\\shop-desk\\shopdesk\\infrastructure\\shopdesk.sql\\shopdesk.persistance.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{AD82DDEB-3E61-461F-8F91-69F3F77E2A3D}|Infrastructure\\ShopDesk.Sql\\ShopDesk.Persistance.csproj|solutionrelative:infrastructure\\shopdesk.sql\\shopdesk.persistance.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD82DDEB-3E61-461F-8F91-69F3F77E2A3D}|Infrastructure\\ShopDesk.Sql\\ShopDesk.Persistance.csproj|d:\\projects\\self\\shop-desk\\shopdesk\\infrastructure\\shopdesk.sql\\shopdesk.persistance.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{AD82DDEB-3E61-461F-8F91-69F3F77E2A3D}|Infrastructure\\ShopDesk.Sql\\ShopDesk.Persistance.csproj|solutionrelative:infrastructure\\shopdesk.sql\\shopdesk.persistance.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD82DDEB-3E61-461F-8F91-69F3F77E2A3D}|Infrastructure\\ShopDesk.Sql\\ShopDesk.Persistance.csproj|d:\\projects\\self\\shop-desk\\shopdesk\\infrastructure\\shopdesk.sql\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD82DDEB-3E61-461F-8F91-69F3F77E2A3D}|Infrastructure\\ShopDesk.Sql\\ShopDesk.Persistance.csproj|solutionrelative:infrastructure\\shopdesk.sql\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A962AF4F-1AE3-48DB-A5AF-C30E5080C27D}|ShopDesk.Application\\ShopDesk.Application.csproj|d:\\projects\\self\\shop-desk\\shopdesk\\shopdesk.application\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A962AF4F-1AE3-48DB-A5AF-C30E5080C27D}|ShopDesk.Application\\ShopDesk.Application.csproj|solutionrelative:shopdesk.application\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A962AF4F-1AE3-48DB-A5AF-C30E5080C27D}|ShopDesk.Application\\ShopDesk.Application.csproj|d:\\projects\\self\\shop-desk\\shopdesk\\shopdesk.application\\shopdesk.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{A962AF4F-1AE3-48DB-A5AF-C30E5080C27D}|ShopDesk.Application\\ShopDesk.Application.csproj|solutionrelative:shopdesk.application\\shopdesk.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ADC6BCCE-E7C8-48BD-9516-7EC4633FDF20}|src\\ShopDesk.Persistence\\ShopDesk.Domain.csproj|d:\\projects\\self\\shop-desk\\shopdesk\\src\\shopdesk.persistence\\shopdesk.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{ADC6BCCE-E7C8-48BD-9516-7EC4633FDF20}|src\\ShopDesk.Persistence\\ShopDesk.Domain.csproj|solutionrelative:src\\shopdesk.persistence\\shopdesk.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,8 +50,135 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 5,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ShopDesk.UI",
+              "DocumentMoniker": "D:\\Projects\\Self\\shop-desk\\ShopDesk\\src\\ShopDesk.UI\\ShopDesk.UI.csproj",
+              "RelativeDocumentMoniker": "src\\ShopDesk.UI\\ShopDesk.UI.csproj",
+              "ToolTip": "D:\\Projects\\Self\\shop-desk\\ShopDesk\\src\\ShopDesk.UI\\ShopDesk.UI.csproj",
+              "RelativeToolTip": "src\\ShopDesk.UI\\ShopDesk.UI.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-09-17T14:26:51.357Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ShopDesk.Domain",
+              "DocumentMoniker": "D:\\Projects\\Self\\shop-desk\\ShopDesk\\src\\ShopDesk.Persistence\\ShopDesk.Domain.csproj",
+              "RelativeDocumentMoniker": "src\\ShopDesk.Persistence\\ShopDesk.Domain.csproj",
+              "ToolTip": "D:\\Projects\\Self\\shop-desk\\ShopDesk\\src\\ShopDesk.Persistence\\ShopDesk.Domain.csproj",
+              "RelativeToolTip": "src\\ShopDesk.Persistence\\ShopDesk.Domain.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-09-17T14:24:52.939Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ShopDesk.Application",
+              "DocumentMoniker": "D:\\Projects\\Self\\shop-desk\\ShopDesk\\ShopDesk.Application\\ShopDesk.Application.csproj",
+              "RelativeDocumentMoniker": "ShopDesk.Application\\ShopDesk.Application.csproj",
+              "ToolTip": "D:\\Projects\\Self\\shop-desk\\ShopDesk\\ShopDesk.Application\\ShopDesk.Application.csproj",
+              "RelativeToolTip": "ShopDesk.Application\\ShopDesk.Application.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-09-17T14:24:37.545Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ShopDesk.Persistance",
+              "DocumentMoniker": "D:\\Projects\\Self\\shop-desk\\ShopDesk\\Infrastructure\\ShopDesk.Sql\\ShopDesk.Persistance.csproj",
+              "RelativeDocumentMoniker": "Infrastructure\\ShopDesk.Sql\\ShopDesk.Persistance.csproj",
+              "ToolTip": "D:\\Projects\\Self\\shop-desk\\ShopDesk\\Infrastructure\\ShopDesk.Sql\\ShopDesk.Persistance.csproj",
+              "RelativeToolTip": "Infrastructure\\ShopDesk.Sql\\ShopDesk.Persistance.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-09-17T14:24:16.043Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ShopDesk.Persistance",
+              "DocumentMoniker": "D:\\Projects\\Self\\shop-desk\\ShopDesk\\Infrastructure\\ShopDesk.Sql\\ShopDesk.Persistance.csproj",
+              "RelativeDocumentMoniker": "Infrastructure\\ShopDesk.Sql\\ShopDesk.Persistance.csproj",
+              "ToolTip": "D:\\Projects\\Self\\shop-desk\\ShopDesk\\Infrastructure\\ShopDesk.Sql\\ShopDesk.Persistance.csproj",
+              "RelativeToolTip": "Infrastructure\\ShopDesk.Sql\\ShopDesk.Persistance.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-09-17T14:24:21.914Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Projects\\Self\\shop-desk\\ShopDesk\\src\\ShopDesk.UI\\Program.cs",
+              "RelativeDocumentMoniker": "src\\ShopDesk.UI\\Program.cs",
+              "ToolTip": "D:\\Projects\\Self\\shop-desk\\ShopDesk\\src\\ShopDesk.UI\\Program.cs",
+              "RelativeToolTip": "src\\ShopDesk.UI\\Program.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAQwA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-17T14:09:55.101Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DependencyInjection.cs",
+              "DocumentMoniker": "D:\\Projects\\Self\\shop-desk\\ShopDesk\\Infrastructure\\ShopDesk.Sql\\DependencyInjection.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\ShopDesk.Sql\\DependencyInjection.cs",
+              "ToolTip": "D:\\Projects\\Self\\shop-desk\\ShopDesk\\Infrastructure\\ShopDesk.Sql\\DependencyInjection.cs",
+              "RelativeToolTip": "Infrastructure\\ShopDesk.Sql\\DependencyInjection.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABIAAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-17T14:08:33.708Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "DependencyInjection.cs",
+              "DocumentMoniker": "D:\\Projects\\Self\\shop-desk\\ShopDesk\\ShopDesk.Application\\DependencyInjection.cs",
+              "RelativeDocumentMoniker": "ShopDesk.Application\\DependencyInjection.cs",
+              "ToolTip": "D:\\Projects\\Self\\shop-desk\\ShopDesk\\ShopDesk.Application\\DependencyInjection.cs",
+              "RelativeToolTip": "ShopDesk.Application\\DependencyInjection.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-17T14:07:07.942Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ShopDesk.Application",
+              "DocumentMoniker": "D:\\Projects\\Self\\shop-desk\\ShopDesk\\ShopDesk.Application\\ShopDesk.Application.csproj",
+              "RelativeDocumentMoniker": "ShopDesk.Application\\ShopDesk.Application.csproj",
+              "ToolTip": "D:\\Projects\\Self\\shop-desk\\ShopDesk\\ShopDesk.Application\\ShopDesk.Application.csproj",
+              "RelativeToolTip": "ShopDesk.Application\\ShopDesk.Application.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-09-17T13:50:06.907Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ShopDesk.Domain.csproj",
+              "DocumentMoniker": "D:\\Projects\\Self\\shop-desk\\ShopDesk\\src\\ShopDesk.Persistence\\ShopDesk.Domain.csproj",
+              "RelativeDocumentMoniker": "src\\ShopDesk.Persistence\\ShopDesk.Domain.csproj",
+              "ToolTip": "D:\\Projects\\Self\\shop-desk\\ShopDesk\\src\\ShopDesk.Persistence\\ShopDesk.Domain.csproj",
+              "RelativeToolTip": "src\\ShopDesk.Persistence\\ShopDesk.Domain.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-09-17T13:46:12.469Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
@@ -27,19 +190,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Class1.cs",
-              "DocumentMoniker": "D:\\Projects\\Self\\shop-desk\\ShopDesk\\ShopDesk.Application\\Class1.cs",
-              "RelativeDocumentMoniker": "ShopDesk.Application\\Class1.cs",
-              "ToolTip": "D:\\Projects\\Self\\shop-desk\\ShopDesk\\ShopDesk.Application\\Class1.cs",
-              "RelativeToolTip": "ShopDesk.Application\\Class1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-15T14:17:26.813Z",
-              "EditorCaption": ""
             }
           ]
         }

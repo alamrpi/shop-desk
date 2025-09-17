@@ -1,6 +1,6 @@
-using Microsoft.AspNetCore.Identity;
-using Microsoft.EntityFrameworkCore;
-using ShopDesk.UI.Data;
+using Serilog;
+using ShopDesk.Application;
+using ShopDesk.Persistance;
 
 namespace ShopDesk.UI
 {
@@ -8,16 +8,30 @@ namespace ShopDesk.UI
     {
         public static void Main(string[] args)
         {
+            Log.Logger = new LoggerConfiguration()
+                    .WriteTo.Console()
+                    .CreateBootstrapLogger();
+
+            Log.Information("Starting up the application...");
+
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
-            var connectionString = builder.Configuration.GetConnectionString("DefaultConnection") ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
-            builder.Services.AddDbContext<ApplicationDbContext>(options =>
-                options.UseSqlServer(connectionString));
-            builder.Services.AddDatabaseDeveloperPageExceptionFilter();
+            //var connectionString = builder.Configuration.GetConnectionString("DefaultConnection") ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
+            //builder.Services.AddDbContext<ApplicationDbContext>(options =>
+            //    options.UseSqlServer(connectionString));
+            //builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
-            builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
-                .AddEntityFrameworkStores<ApplicationDbContext>();
+            //builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
+            //    .AddEntityFrameworkStores<ApplicationDbContext>();
+
+            // 1. Register services from the Application layer
+            builder.Services.AddApplicationServices();
+
+            // 2. Register services from the Persistence (Infrastructure) layer
+            builder.Services.AddPersistenceServices(builder.Configuration);
+
+
             builder.Services.AddControllersWithViews();
 
             var app = builder.Build();

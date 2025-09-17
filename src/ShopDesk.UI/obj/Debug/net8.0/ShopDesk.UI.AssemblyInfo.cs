@@ -16,7 +16,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ShopDesk.UI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7f237e63704d1c1f4363fa293dad7493e4f31886")]
 [assembly: System.Reflection.AssemblyProductAttribute("ShopDesk.UI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ShopDesk.UI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
