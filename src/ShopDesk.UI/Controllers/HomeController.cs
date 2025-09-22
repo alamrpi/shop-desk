@@ -14,7 +14,7 @@ namespace ShopDesk.UI.Controllers
         {
             _logger = logger;
         }
-
+        [AllowAnonymous]
         public IActionResult Index()
         {
             return View();
