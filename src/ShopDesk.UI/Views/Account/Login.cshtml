@@ -6,19 +6,19 @@
 }
 
 <div class="row justify-content-center">
-    <div class="col-lg-5">
-        <div class="form-container p-5 bg-white rounded">
+    <div class="col-md-8 col-lg-6">
+        <div class="form-container p-4 bg-white rounded custom-form">
             <form class="app-form" asp-controller="Account" asp-action="Login" method="post">
                 <div asp-validation-summary="ModelOnly" class="text-danger" role="alert"></div>
                 <div class="row">
                     <div class="col-12">
-                        <div class="mb-5 text-center text-lg-start">
+                        <div class="mb-4 text-center">
                             <p class="f-s-16 mt-2">
-                                <img alt="Shop Desk Logo" class="img-fluid" src="~/images/icon.png">
+                                <img alt="ShopDesk Logo" class="img-fluid" src="~/images/logo.png" style="max-width: 180px;">
                                 <br>
-                                <span class="text-muted d-block text-center">Buy, Sell & Grow with Shop-Desk</span>
+                                <span class="text-muted d-block text-center mt-2">Your entire shop, now on one desk.</span>
                             </p>
-                            <h2 class="f-w-600 text-center mt-5">Login</h2>
+                            <h2 class="f-w-600 text-center mt-4">Login</h2>
                         </div>
                     </div>
                     <div class="col-12">
@@ -40,12 +40,12 @@
                     </div>
                     <div class="col-12">
                         <div class="form-check d-flex align-items-center gap-2 mb-3">
-                            <input asp-for="RememberMe" class="form-check-input w-25 h-25" />
-                            <label asp-for="RememberMe" class="form-check-label mt-2 f-s-16 text-dark"></label>
+                            <input asp-for="RememberMe" class="form-check-input" />
+                            <label asp-for="RememberMe" class="form-check-label f-s-16 text-dark"></label>
                         </div>
                     </div>
                     <div class="col-12 mt-3">
-                        <button class="btn btn-primary btn-lg w-100" type="submit" role="button" style="height: 60px;">Login</button>
+                        <button class="btn btn-primary btn-lg w-100" type="submit" role="button" style="height: 50px;">Login</button>
                     </div>
                 </div>
             </form>

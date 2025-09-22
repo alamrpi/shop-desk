@@ -14,32 +14,95 @@ namespace ShopDesk.UI.Components
                 new MenuItemViewModel { Title = "Dashboard", Icon = "ph-light ph-house", RouteName = "Dashboard" },
                 new MenuItemViewModel
                 {
-                    Title = "Product Management",
+                    Title = "Administration",
                     Icon = "ph-light ph-gift",
                     SubItems = new List<MenuItemViewModel>
                     {
-                        new MenuItemViewModel { Title = "New Product", Icon = "ph-plus", RouteName = "ProductCreate" },
-                        new MenuItemViewModel { Title = "Agro Products", Icon = "ph-plus-circle", RouteName = "" },
-                        new MenuItemViewModel { Title = "Farming Tools", Icon = "ph-plus-circle", RouteName = "" },
-                        new MenuItemViewModel { Title = "Sub-category", Icon = "ph-plus-circle", RouteName = "ProductSubCategoriesIndex" },
-                        new MenuItemViewModel { Title = "Category", Icon = "ph-plus-circle", RouteName = "ProductCategoriesIndex" }
+                        new MenuItemViewModel { Title = "Setup", Icon = "ph-plus", RouteName = "ProductCreate" },
+                        new MenuItemViewModel { Title = "Settings", Icon = "ph-plus-circle", RouteName = "ProductCategoriesIndex" }
                     }
                 },
-                new MenuItemViewModel { Title = "Buyers", Icon = "ph-light ph-users", RouteName = "BuyersIndex" },
-                new MenuItemViewModel { Title = "Sellers", Icon = "ph-light ph-user-switch", RouteName = "SellersIndex" },
-                new MenuItemViewModel { Title = "Traders", Icon = "ph-light ph-handshake", RouteName = "TradersIndex" },
-                // Add other menu items similarly...
-                 new MenuItemViewModel
+                new MenuItemViewModel
                 {
-                    Title = "Website",
-                    Icon = "ph-light ph-globe",
-                    RouteName = "",
+                    Title = "Financials",
+                    Icon = "ph-light ph-gift",
                     SubItems = new List<MenuItemViewModel>
                     {
-                        new MenuItemViewModel { Title = "FAQ", Icon = "ph-plus", RouteName = ""},
-                        new MenuItemViewModel { Title = "Blog", Icon = "ph-plus-circle", RouteName = ""},
+                        new MenuItemViewModel { Title = "Chart of Accounts", Icon = "ph-plus", RouteName = "ProductCreate" }
                     }
                 },
+                new MenuItemViewModel
+                {
+                    Title = "Sales Management",
+                    Icon = "ph-light ph-gift",
+                    SubItems = new List<MenuItemViewModel>
+                    {
+                        new MenuItemViewModel { Title = "Chart of Accounts", Icon = "ph-plus", RouteName = "ProductCreate" }
+                    }
+                },
+
+                 new MenuItemViewModel
+                {
+                    Title = "Purchase Management",
+                    Icon = "ph-light ph-gift",
+                    SubItems = new List<MenuItemViewModel>
+                    {
+                        new MenuItemViewModel { Title = "Chart of Accounts", Icon = "ph-plus", RouteName = "ProductCreate" }
+                    }
+                },
+                   new MenuItemViewModel
+                {
+                    Title = "Business Partner",
+                    Icon = "ph-light ph-gift",
+                    SubItems = new List<MenuItemViewModel>
+                    {
+                        new MenuItemViewModel { Title = "Chart of Accounts", Icon = "ph-plus", RouteName = "ProductCreate" }
+                    }
+                },
+                    new MenuItemViewModel
+                {
+                    Title = "Banking",
+                    Icon = "ph-light ph-gift",
+                    SubItems = new List<MenuItemViewModel>
+                    {
+                        new MenuItemViewModel { Title = "Incoming Payments", Icon = "ph-plus", RouteName = "ProductCreate" },
+                        new MenuItemViewModel { Title = "Outgoing Payments", Icon = "ph-plus", RouteName = "ProductCreate" }
+                    }
+                },
+                     new MenuItemViewModel
+                {
+                    Title = "Inventory Management",
+                    Icon = "ph-light ph-gift",
+                    SubItems = new List<MenuItemViewModel>
+                    {
+                        new MenuItemViewModel { Title = "Items", Icon = "ph-plus", RouteName = "ProductCreate" },
+                        new MenuItemViewModel { Title = "Goods Receipt", Icon = "ph-plus", RouteName = "ProductCreate" },
+                          new MenuItemViewModel { Title = "Goods Issue", Icon = "ph-plus", RouteName = "ProductCreate" },
+                            new MenuItemViewModel { Title = "Inventory Transfer Request", Icon = "ph-plus", RouteName = "ProductCreate" },
+                              new MenuItemViewModel { Title = "Inventory Transfer", Icon = "ph-plus", RouteName = "ProductCreate" }
+                    }
+                },
+                       new MenuItemViewModel
+                {
+                    Title = "Human Resource",
+                    Icon = "ph-light ph-gift",
+                    SubItems = new List<MenuItemViewModel>
+                    {
+                        new MenuItemViewModel { Title = "Employees", Icon = "ph-plus", RouteName = "ProductCreate" },
+                       
+                    }
+                },
+                               new MenuItemViewModel
+                {
+                    Title = "Reports",
+                    Icon = "ph-light ph-gift",
+                    SubItems = new List<MenuItemViewModel>
+                    {
+                        new MenuItemViewModel { Title = "Financials Reports", Icon = "ph-plus", RouteName = "ProductCreate" },
+
+                    }
+                },
+
             };
 
             // Fetch user data. This is a placeholder.

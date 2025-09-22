@@ -3,6 +3,7 @@ using Serilog;
 using ShopDesk.Application;
 using ShopDesk.Domain.Entities;
 using ShopDesk.Persistance;
+using ShopDesk.UI.Extensions;
 
 namespace ShopDesk.UI
 {
@@ -32,6 +33,8 @@ namespace ShopDesk.UI
                             .AddDefaultTokenProviders();
 
             var app = builder.Build();
+
+            _ = app.ApplyMigrationsAndSeedDataAsync();
 
             // Configure the HTTP request pipeline.
             if (app.Environment.IsDevelopment())
