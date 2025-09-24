@@ -15,7 +15,7 @@ namespace ShopDesk.UI.Components
                 new MenuItemViewModel
                 {
                     Title = "Administration",
-                    Icon = "ph-light ph-gift",
+                    Icon = "fa-solid fa-house",
                     SubItems = new List<MenuItemViewModel>
                     {
                         new MenuItemViewModel { Title = "Setup", Icon = "ph-plus", RouteName = "ProductCreate" },
@@ -25,7 +25,7 @@ namespace ShopDesk.UI.Components
                 new MenuItemViewModel
                 {
                     Title = "Financials",
-                    Icon = "ph-light ph-gift",
+                    Icon = "fa-solid fa-coins",
                     SubItems = new List<MenuItemViewModel>
                     {
                         new MenuItemViewModel { Title = "Chart of Accounts", Icon = "ph-plus", RouteName = "ProductCreate" }
@@ -34,7 +34,7 @@ namespace ShopDesk.UI.Components
                 new MenuItemViewModel
                 {
                     Title = "Sales Management",
-                    Icon = "ph-light ph-gift",
+                    Icon = "ph ph-bookmark",
                     SubItems = new List<MenuItemViewModel>
                     {
                         new MenuItemViewModel { Title = "Chart of Accounts", Icon = "ph-plus", RouteName = "ProductCreate" }
@@ -44,7 +44,7 @@ namespace ShopDesk.UI.Components
                  new MenuItemViewModel
                 {
                     Title = "Purchase Management",
-                    Icon = "ph-light ph-gift",
+                    Icon = "ph ph-hand-coins",
                     SubItems = new List<MenuItemViewModel>
                     {
                         new MenuItemViewModel { Title = "Chart of Accounts", Icon = "ph-plus", RouteName = "ProductCreate" }
@@ -53,7 +53,7 @@ namespace ShopDesk.UI.Components
                    new MenuItemViewModel
                 {
                     Title = "Business Partner",
-                    Icon = "ph-light ph-gift",
+                    Icon = "ph ph-buildings",
                     SubItems = new List<MenuItemViewModel>
                     {
                         new MenuItemViewModel { Title = "Chart of Accounts", Icon = "ph-plus", RouteName = "ProductCreate" }
@@ -62,7 +62,7 @@ namespace ShopDesk.UI.Components
                     new MenuItemViewModel
                 {
                     Title = "Banking",
-                    Icon = "ph-light ph-gift",
+                    Icon = "ph ph-bank",
                     SubItems = new List<MenuItemViewModel>
                     {
                         new MenuItemViewModel { Title = "Incoming Payments", Icon = "ph-plus", RouteName = "ProductCreate" },
@@ -72,7 +72,7 @@ namespace ShopDesk.UI.Components
                      new MenuItemViewModel
                 {
                     Title = "Inventory Management",
-                    Icon = "ph-light ph-gift",
+                    Icon = "ph ph-bookmarks-simple",
                     SubItems = new List<MenuItemViewModel>
                     {
                         new MenuItemViewModel { Title = "Items", Icon = "ph-plus", RouteName = "ProductCreate" },
@@ -85,7 +85,7 @@ namespace ShopDesk.UI.Components
                        new MenuItemViewModel
                 {
                     Title = "Human Resource",
-                    Icon = "ph-light ph-gift",
+                    Icon = "ph ph-person",
                     SubItems = new List<MenuItemViewModel>
                     {
                         new MenuItemViewModel { Title = "Employees", Icon = "ph-plus", RouteName = "ProductCreate" },
@@ -95,7 +95,7 @@ namespace ShopDesk.UI.Components
                                new MenuItemViewModel
                 {
                     Title = "Reports",
-                    Icon = "ph-light ph-gift",
+                    Icon = "ph ph-article",
                     SubItems = new List<MenuItemViewModel>
                     {
                         new MenuItemViewModel { Title = "Financials Reports", Icon = "ph-plus", RouteName = "ProductCreate" },
